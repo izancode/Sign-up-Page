@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Sign up page</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        #page {
+            width: 720px;
+            height: 500px;
+            margin: 80px auto;
+            background-image: url(sbg.jpeg);
+            background-size: 100% 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        }
+
+        #left-page {
+            width: 330px;
+            height: 480px;
+            float: left;
+        }
+
+        h5 {
+            text-align: center;
+            font-family: Cambria;
+            color: white;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #right-page {
+            width: 385px;
+            height: 500px;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            columns: #323232;
+            font-size: 15px;
+            text-align: right;
+            font-family: sans-serif;
+            font-weight: normal;
+            margin-right: 17px;
+        }
+
+        input[type=text] {
+            width: 163px;
+            float: left;
+            padding: 12px;
+            box-sizing: border-box;
+            margin: 9px;
+            border-radius: 5px;
+            border: none;
+            border: 0.5px solid grey;
+        }
+
+        input[type=date] {
+            width: 163px;
+            float: left;
+            padding: 12px;
+            box-sizing: border-box;
+            margin: 9px;
+            border-radius: 10px;
+            border: none;
+            border: 0.5px solid grey;
+
+        }
+
+        select {
+            width: 163px;
+            float: left;
+            padding: 12px;
+            box-sizing: border-box;
+            margin: 9px;
+            border-radius: 10px;
+            border: none;
+            border: 0.5px solid grey;
+
+
+        }
+
+        fieldset {
+            float: left;
+            width: 320px;
+            margin: 10px;
+            border: none;
+            border: 0.5px solid grey;
+            border-radius: 5px;
+        }
+
+        input[type=email] {
+            border: none;
+        }
+
+        input[type=number] {
+            display: inline;
+            width: 150px;
+            border: none;
+        }
+
+        input[type=password] {
+            width: 163px;
+            float: left;
+            padding: 12px;
+            box-sizing: border-box;
+            margin: 9px;
+            border-radius: 5px;
+            border: none;
+            border: 0.5px solid grey;
+
+        }
+
+        #upbox {
+            width: 340px;
+            height: 50px;
+            float: left;
+            margin: 10px;
+        }
+
+        #upload {
+            width: 344px;
+            height: 50px;
+            background-color: yellow;
+            border-radius: 40px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            padding-top: 18px;
+            box-sizing: border-box;
+            position: absolute;
+            box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type=file] {
+            position: absolute;
+            border: 1px solid red;
+            width: 344px;
+            height: 50px;
+            border-radius: 40px;
+            opacity: 0;
+
+        }
+
+        input[type=submit] {
+            border: none;
+            float: left;
+            width: 344px;
+            height: 50px;
+            border-radius: 40px;
+            background-color: #5959f2;
+            color: white;
+            font-family: calibri;
+            font-size: 18px;
+            margin-left: 12px;
+            margin-top: 10px;
+        }
+
+        legend {
+            font-size: 14px;
+            font-family: calibri;
+            color: #323232;
+        }
+
+        input:focus {
+            outline: none;
+
+        }
+
+        input[type=text]:focus {
+            border-radius: 40px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        input[type=submit]:hover{
+            width: 150px;
+            transition: 0.5s;
+            margin-left: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div id="left-page">
+            <h5>watchstore.com</h5>
+        </div>
+        <div id="right-page">
+            <h2>sign up to purchse</h2>
+            <form>
+                <input type="text" name="firstname" placeholder="Firstname">
+                <input type="text" name="lastname" placeholder="Lastname">
+                <input type="date" name="dob">
+                <select name="nationality">
+                    <option value="indian">Indian</option>
+
+                    <option value="Australian">Australian</option>
+                    <option value="American">American</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Dubai">Dubai</option>
+                </select>
+                <fieldset>
+                    <legend>Email Id</legend>
+                    <input type="email" name="email id">
+                </fieldset>
+                <fieldset>
+                    <legend>Mobile No</legend>
+                    <input type="number" name="firstnumber" placeholder="first no...">
+                    <input type="number" name="secondnumber" placeholder="last no...">
+                </fieldset>
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <div id="upbox">
+                    <div id="upload">Upload Your Pic Now</div>
+                    <input type="file" accept=".jpg">
+                </div>
+                <input type="submit" value="SUBMIT">
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
